@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .box1{
+        width:150px;height:150px;
+        background:red;
+        position:absolute;
+        top:20px;left:20px;
+        
+        z-index:1;
+      border-left-color:purple;
+
+
+    }
+       .box2{
+        width:150px;height:150px;
+        background:green;
+        position:absolute;
+        top:40px;left:40px;
+        z-index:3;
+         
+             border-top-color: black;
+     border-bottom-color:plum;
+     border-left-color:purple;
+        z-index:1;
+
+
+       }
+          .box3{
+        width:150px;height:150px;
+        background:blue;
+        position:absolute;
+        top:60px;left:60px;
+        z-index:2;
+           border-bottom-left-radius:100px 100px;
+        z-index:1;
+
+
+         }  
+.nav{
+    height:50px;
+    padding:20px;
+    background-color:black;
+    color:white;
+}
+#logo{
+    font-size:30px;
+    color:goldenrod;
+    text-transform: capitalize;
+    text-decoration:none;
+
+}
+a{
+    text-decoration: none;
+    margin-right:200px;
+    text-transform:capitalize;
+    color: white;
+}
+input{
+    padding:10px;
+    text-align: center;
+    background-color:gold;
+    border-radius:15px;
+    margin:20px;
+}
+button{
+       padding:10px;
+    text-align: center;
+    background-color:gold;
+    border-radius:20px;
+
+}
+
+
+
+</style>
+<body>
+     <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div> 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="nav">
+        <a href="" id="logo">amazon</a>
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">contact</a>
+            <input type="text" placeholder="search here">
+            <button>Search</button>
+     </div>
+
+    
+
+
+         
+
+    
+</body>
+</html>

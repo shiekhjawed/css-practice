@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin:0;
+        padding:0;
+     }
+     body{
+        background:hsl(0, 5%, 76%);
+     }
+
+    
+     header{
+        display:flex;
+        justify-content:space-between;
+        padding:20px;
+    
+     }
+     .logo{
+        font-style: italic;
+        margin: left 0;
+        font-size: 50px;;
+     }
+     nav ul{
+        display: flex;
+        list-style:none;
+        margin:0;
+        padding:0;
+     }
+     nav li{
+        margin-left:20px;
+     }
+     nav a{
+        text-transform:capitalize;
+        text-decoration:none;
+        color: black;
+        
+        
+     }
+          .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:50vh;
+        padding:20px;
+        margin:20px;
+     }
+     .content{
+        width:fit-content
+     }
+     .content h1{
+        font-size:50px;
+        color: black;
+        text-transform: capitalize;
+        line-height:2;
+     }
+     .content h4{
+        text-transform: capitalize;
+        line-height:2rem;
+
+     }
+     .btn{
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;
+        color:white;
+        width:60%;
+        text-align: center;
+        border:none;
+        margin-bottom:20px;
+    
+    
+     }
+     #abt-btn{
+        padding:20px;
+        text-transform: capitalize;
+        border-radius:30px;
+        background-color:blueviolet;
+        padding:12px 24px;
+        
+        color: aliceblue;
+        font-size: 18px;
+    
+     }
+     .container img {
+      display: flex;
+       border:5px solid black;
+        width:500px;
+        height:500px;
+        border-radius:50%;
+        object-fit: cover;
+        margin-left: 150px;
+     
+     }
+
+</style>
+<body>
+    <header>
+  
+        <div class="logo">jigar</div>
+            <nav>
+                <ul>
+                    <li><a href="" style="color: blueviolet;text-decoration: underline;">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">skill</a></li>
+                    <li><a href="">education</a></li>
+                    <li><a href="">work</a></li>
+                    <li><a href="">experience</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <section class="container">
+        <div class="content">
+            <h1 style="margin-top:0;margin-right:10px;text-transform: capitalize;">hi there,<br>i'm jigar <span style="color:orangered ;">sable</span></h1>
+            <h3 style="text-transform: capitalize;">i am into <span style="color:brown">web develop|</span></h3>
+        <div class="btn">
+         <button id="abt-btn">about me<i class="fa-solid fa-arrow-down" style="color:white;margin-left:2px;"></i></button> </div> 
+       
+           <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-square-twitter"></i>
+           <i class="fa-brands fa-google-plus-g"></i>
+           <i class="fa-brands fa-linkedin"></i>
+           <i class="fa-brands fa-youtube"></i>
+           <i class="fa-brands fa-google"></i>          
+                     
+           </div>          
+
+
+        <div class="container-img">
+            <img src="../uesr.jpeg" alt="">
+        </div>
+    </section>
+       <img src="../uesr.jpeg" alt="" height="50px" width="50px" style="margin-left:100px;border-radius:50% ;">  
+</body>
+</html>

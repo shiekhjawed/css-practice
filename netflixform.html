@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Sign In</title>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<style>
+    body {
+    background-image: url("../picture/netflixfoam.jpeg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    margin: 80px auto;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.content input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box i {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    cursor: pointer;
+    color: #bbb;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background: red;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.use {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.remember{
+    color:white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    
+    gap:10px;
+
+}
+
+
+
+
+
+
+    </style>
+<body>
+    <div class="content">
+        <h2>Sign In</h2>
+
+        <input type="text" placeholder="Email or phone number">
+
+        <div class="password-box">
+            <input type="password" id="pass" placeholder="Password">
+            <i class="fa fa-eye" id="toggle"></i>
+        </div>
+
+        <button class="login-btn">Sign In</button>
+
+        <p style="text-align: center;">OR</p>
+        <button class="use">use a sign-in code</button>
+
+        <a href="" style="margin-left: auto; margin-right:auto;color:white;">forget password?</a>
+
+        <div class="remember">
+              <label><input type="checkbox"></label>
+              <label for="">remember me</label>
+        </div>
+
+        <p class="signup">New to Netflix? <a href="" style="color:white;">Sign up now</a></p>
+        <p >this page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+     <a href="" style="color: blue;">Learn more</a>
+    </div>
+<p>this Page i</p>
+    <script>
+        const pass = document.getElementById('pass');
+        const toggle = document.getElementById('toggle');
+
+        toggle.addEventListener('click', () => {
+            if (pass.type === "password") {
+                pass.type = "text";
+                toggle.classList.remove("fa-eye");
+                toggle.classList.add("fa-eye-slash");
+            } else {
+                pass.type = "password";
+                toggle.classList.remove("fa-eye-slash");
+                toggle.classList.add("fa-eye");
+            }
+        });
+    </script>
+</body>
+</html>

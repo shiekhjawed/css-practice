@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+       font-family: 'Courier New', Courier, monospace;
+        }
+      header {
+      background-image: url("../picture/kitchen.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+      width:100%;
+      color: white;
+      position:relative;
+    }
+       
+        nav{
+            display: flex;
+            justify-content:space-between;
+            padding:20px;
+            color:white;
+            position:relative;
+            top:0;
+            left:0;
+            width:100%;
+            z-index:1000;
+        }
+          .logo{
+            color:white;
+            font-size:50px;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        nav ul{
+            display: flex;
+            margin:0;
+            padding: 0;
+            list-style:none ;
+        }
+        nav li{
+              margin-left:20px;
+        }
+        nav a{
+            text-decoration: none;
+            color:aliceblue;
+            text-transform: capitalize;
+            font-size:15px;
+            margin:0 20px;
+        }
+        
+
+    .logo-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    .logo-text h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+
+    .logo-text p {
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    /* About us section */
+    .about{
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      padding:40px;
+      
+    }
+    .about img{
+      width: 250px;
+      border-radius:20px;
+      margin-right:20px;
+    }
+    /* Fast-Food Menu */
+    .menu{
+      display: flex;
+      justify-content: center;
+      gap:20px;
+    
+      flex-wrap: wrap;
+      
+    }
+    /* Fast-Food Coverage Area */
+    .fast-food{
+    text-align: center;
+    width:500px;
+    box-shadow: 0 4px 8px rgba(225, 225, 225, 0.1);
+    }
+    .fast-food img{
+      width: 100%;
+      border-radius:20px;
+      padding:8px;
+    }
+
+</style>
+<body>
+    <header>
+      <nav>
+
+        <div class="logo">
+          delicious <span style="color:oklab(71.624% -0.0149 0.14108);">bite</span>
+        </div>
+        <ul>
+            <li><a href="">menu</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">reservation</a></li>
+        </ul>
+ </nav>
+ <div class="logo-text">
+      <h1>welcome to <br> delicious bites</h1>
+      <p>where taste meets perfection</p>
+    </div>
+    </header>
+    <!-- About us section -->
+     <section class="about">
+ <img src="../picture/about.webp" alt="about">
+    
+     <div>
+        <h2>About Us</h2>
+        <p style="width:150px;font-weight: bold;text-transform: capitalize;">at delicious bite,we serve freshly made dishes with love and care.
+                   our chefs use the finest ingredients to bring you unforgettable flavours.
+        </p>
+     </div>
+     </section>
+    <!-- Fast-Food Menu Section -->
+    <section class="menu">
+        <div class="fast-food">
+            <img src="../picture/cheeseburger.jpeg" alt="" height="250px">
+            <p style="font-weight: bold;">discover on home</p>
+            <p style="font-weight: bold;">$12.99</p>
+
+        </div>
+        <div class="fast-food">
+            <img src="../picture/classicpizza.jpeg" alt="" height="250px">
+           <p style="font-weight: bold;">discover on home</p>
+           <p style="font-weight:bold;">$99.8</p>
+        </div>
+         <div class="fast-food">
+            <img src="../picture/italianpasta.jpeg" alt="">
+           <p style="font-weight: bold;">discover on home</p>
+            <p style="font-weight: bold;">$12.99</p>
+        </div>
+         <div class="fast-food">
+            <img src="../picture/salaad.jpeg" alt="" height="250px">
+           <p style="font-weight: bold;" >discover on home</p>
+            <p style="font-weight: bold;">$12.99</p>
+        </div>
+
+    </section>
+
+    
+</body>
+</html>

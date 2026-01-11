@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>STUDENT REGISTRATION FORM</title>
+</head>
+   <body style="background-color: #cdd0da;">
+    <h1>STUDENT REGISTRATION FORM</h1>
+
+    <form >
+          <label>Roll No :</label>
+            <input type="text" name="rollno" size="30" maxlength="150" required><br><br>
+
+   
+
+        <label>Student Name :</label>
+        <input type="text" name="firstname" placeholder="First Name">
+        -
+        <input type="text" name="lastname" placeholder="Last Name"><br><br>
+     
+
+
+    <label>Father's Name :</label>
+    <input type="text" name="fathername"><br><br>
+
+    <label>Date Of Birth :</label>
+    <input type="text" name="day" placeholder="Day" size="4">
+    <input type="text" name="month" placeholder="Month" size="4">
+    <input type="text" name="year" placeholder="Year" size="6">
+    (DD-MM-YYYY)<br><br>
+
+    <label>Mobile No. :</label>
+    <input type="text" value="+92" size="4" readonly>
+    <input type="text" name="mobile"><br><br>
+
+    <label>Email ID :</label>
+    <input type="email" name="email" id="email" required size="30" maxlength="150" ><br><br>
+
+    <label>Password :</label>
+    <input type="password" name="password" size="30" maxlength="150" ><br><br>
+     <fieldset>
+    <legend>Gender</legend> 
+    <input type="radio" name="gender" id="male"> Male
+    <input type="radio" name="gender" id="female"> Female<br><br>
+     </fieldset>
+    <label>Department :</label>
+    <input type="checkbox" name="dept" value="CSE"> CSE
+    <input type="checkbox" name="dept" value="IT"> IT
+    <input type="checkbox" name="dept" value="ECE"> ECE
+    <input type="checkbox" name="dept" value="Civil"> Civil
+    <input type="checkbox" name="dept" value="Mech"> Mech<br><br>
+
+    <label>Course :</label>
+    <select>
+      <option>------------------ Select Current Course's ------------------</option>
+      <option>B.Tech</option>
+      <option>M.Tech</option>
+      <option>MBA</option>
+      <option>MCA</option>
+    </select><br><br>
+
+    <label>Student photo :</label>
+    <input type="file" name="photo"><br><br>
+
+    <label>City :</label>
+    <input type="text" name="city" size="30" maxlength="150" ><br><br>
+
+    <label> Address:</label><br><br>
+    <textarea name="address"id="address" rows="10" cols="100"></textarea><br><br>
+
+    <input type="submit" value="Register">
+    <input type="submit" value="Reset">
+    <img src="../Desktop/uesr.jpeg" alt="">
+  </form>
+  </body>
+</html>

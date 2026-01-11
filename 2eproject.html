@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrona Puppy Encyclopedia - A Tribute to Canine Diversity</title>
+    <meta name="description" content="World's most comprehensive encyclopedia of dog breeds by Veteran Patrona - Country wise, Breed wise, Behavior & Characteristics">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'georgia', serif;
+
+            line-height: 1.6;
+            
+        }
+        header{
+               background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat;
+               height: 400px;
+            
+        }
+        .logo h1{
+            text-align:center;
+            color:white;
+            padding-top: 130px;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        .logo .line{
+            text-align: center;
+            color:  #FFB84D;
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 2rem;
+            text-transform: capitalize;
+        }
+        .logo p{
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            font-style: italic;
+
+        }
+        nav{
+            background-color:brown;
+            
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+nav ul li a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        
+        }
+        
+nav ul li a:hover{
+    background-color:yellow;
+    color:brown;
+    border-radius: 5px;
+}
+.second-nav{
+    background-color: bisque;
+    padding: 10px;
+    
+}
+.second-nav a{
+    color:black;
+    text-decoration: none;
+}
+.container{
+     max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+
+       
+    
+}
+.three{
+    padding:30px;
+    margin:40 0;
+    background: white;  
+  border-radius: 10px;
+ box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:20px;
+}
+.box{
+    border: 1px solid #ddd;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+     border-radius: 10px;
+}
+.box :hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+.box img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+}
+.box-content{
+    padding: 15px;
+}
+.box-down{
+     background-color: #f9f3e8;
+     padding: 15px;
+     font-size: 0.9rem;
+     margin-top: 10px;
+     border-radius: 5px;
+}
+.three-card{
+    padding: 30px;
+    margin: 40px 0;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     border-radius: 10px;
+}
+
+.card{
+display: grid;
+grid-template-columns: auto auto auto auto;
+gap: 15px;
+border-top: 3px solid  #FFB84D;
+}
+.card img{
+    width: 100%;
+    height:250px;
+    object-fit: cover;
+    border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+     margin-top: 20px;
+     
+
+}
+.card img :hover{
+       transform: scale(1.05);
+}
+.nutrition{
+    padding: 30px;
+    margin:40px 0;
+        background: white;  
+  border-radius: 10px;
+ box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+ 
+}
+.instruction{
+border-top: 3px solid  #FFB84D;
+
+     background: linear-gradient(135deg, #FFB84D, #D2691E);
+            color: white;
+            padding: 20px;
+            border-bottom: 10px;
+              margin: 20px 0;
+        
+}
+.query{
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 10px;
+       background: white;  
+  
+ box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+ 
+
+}form{
+   
+    max-width: 600px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     gap:20px;
+     margin-top:20px;
+}
+ input,textarea{
+    width:100%;
+    padding:10px;
+    font-size: 12px;
+    border-radius:5px;
+    border: 1px solid grey;
+}
+button{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    font-size:1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+        
+        @media (max-width: 768px) {
+            .logo h1 { font-size: 2.5rem; }
+            nav ul { flex-direction: column; }
+            nav ul li { margin: 5px 0; }
+        }
+
+
+
+
+        </style>
+<body>
+    <header>
+        <div class="logo">
+                <h1>PATRONA Puppy Encyclopedia</h1>
+            <p class="line">"Every Dog Has a Story – Preserving Canine Heritage Worldwide"</p>
+            <p>Created by Famous Veteran Ms. Patrona</p>
+
+        </div>
+        
+        </header>
+        <nav>
+            <ul>
+             <li><a href="#home">Home</a></li>
+            <li><a href="#breeds">Dog Breeds</a></li>
+            <li><a href="#countries">By Country</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#nutrition">Nutrition Tips</a></li>
+            <li><a href="#query">Ask a Question</a></li>
+            <li><a href="#about">About Patrona</a></li>
+        </ul>
+        
+        </nav>
+        <div class="second-nav">
+             <a href="">home>></a><a href="">German>></a><a href="">Shepherd>></a>
+        </div>
+        <div class="container">
+            <section class="three">
+
+                <h3 style="color:#FFB84D;border-bottom:3px solid #FFB84D; text-transform: capitalize;margin-bottom: 20px;padding-bottom: 10px;">explore dog breed</h3>
+            <div class="grid">
+                <!-- box 1 -->
+                 <div class="box">
+                <img src="../picture/cake2.jpg" alt="">
+         
+                      <div class="box-content">
+                    <h3 style="color:brown;text-transform: capitalize;margin-bottom: 10px;">Germen-shephered</h3>
+                         <p><strong>Origin:</strong> Germany</p>
+                        <p><strong>Type:</strong> Herding / Working</p>
+                         <div class="box-down">
+                            <strong>Behavior:</strong> Friendly, outgoing, gentle, excellent with children, highly food-motivated, loves water.
+                        </div>
+
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <img src="../picture/cake2.jpg" alt="" srcset="">
+                       <div class="box-content">
+                    <h3 style="color:brown;text-transform: capitalize;margin-bottom: 10px;">Germen-shephered</h3>
+                         <p><strong>Origin:</strong> Germany</p>
+                        <p><strong>Type:</strong> Herding / Working</p>
+                         <div class="box-down">
+                            <strong>Behavior:</strong> Friendly, outgoing, gentle, excellent with children, highly food-motivated, loves water.
+                        </div>
+
+                </div>
+            </div>
+
+            
+            <!-- box 3 -->
+            <div class="box">
+                <img src="../picture/cakes.jpg" alt="">
+                       <div class="box-content">
+                    <h3 style="color:brown;text-transform: capitalize;margin-bottom: 10px;">Germen-shephered</h3>
+                         <p><strong>Origin:</strong> Germany</p>
+                        <p><strong>Type:</strong> Herding / Working</p>
+                         <div class="box-down">
+                            <strong>Behavior:</strong> Friendly, outgoing, gentle, excellent with children, highly food-motivated, loves water.
+                        </div>
+
+                </div>
+            </div>
+
+            
+        
+
+    
+    </section>
+    <section class="three-card">
+         <h2 style="color: #FFB84D;"> Patrona's Personal Photography Collection</h2>
+         <div class="card">
+              <img src="../picture/cakes.jpg" alt="Puppy playing">
+                <img src="../picture/cakes.jpg" alt="Husky in snow">
+                <img src="../picture/cardv3.jpg" alt="Golden Retriever">
+                <img src="../picture/cakes.jpg" alt="Beagle puppy">
+                <img src="../picture/cakes.jpg" alt="Border Collie">
+                <img src="../picture/cakes.jpg" alt="Pug">
+                  <img src="../picture/cake2.jpg" alt="Pug">
+                    <img src="../picture/card44.jpg" alt="Pug">
+
+    </div>
+    </section>
+    <section class="nutrition">
+         <h2 style="color:#FFB84D;text-transform: capitalize;border-bottom: 3px solid#FFB84D;">Food & Nutrition Tips by Veteran Patrona</h2>
+                     <div class="instruction">
+                <h3>Golden Rules for Feeding Your Dog</h3>
+                <ul>
+                    <li>Always provide fresh water daily</li>
+                    <li>Choose high-quality protein as first ingredient</li>
+                    <li>Avoid toxic foods: chocolate, grapes, onions, garlic</li>
+                    <li>Puppies need 3-4 meals a day, adults 2</li>
+                    <li>Adjust portions according to activity level</li>
+                    <li>Never feed cooked bones</li>
+                </ul>
+            </div>
+        </section>
+        <section class="query">
+              <h2 style="color: #FFB84D;text-transform: capitalize;;border-bottom: 3px solid#FFB84D;">Ask Veteran Patrona Anything About Dogs</h2>
+              <form>
+                <input type="text" placeholder="your name " required>
+                 <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject (e.g., German Shepherd Training)">
+                <textarea rows="6" placeholder="Your Question... (Behavior, Health, Training, Nutrition, etc.)" required></textarea>
+                <button type="submit">Send Question to Patrona</button>
+              </form>
+
+        </section>
+
+
+
+       
+    </body>
+    </html>
+    

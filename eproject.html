@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrona Puppy Encyclopedia - A Tribute to Canine Diversity</title>
+    <meta name="description" content="World's most comprehensive encyclopedia of dog breeds by Veteran Patrona - Country wise, Breed wise, Behavior & Characteristics">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+         :root {
+            --primary: #8B4513;
+            --secondary: #D2691E;
+            --accent: #FFB84D;
+            --dark: #2C1808;
+            --light: #FFF8F0;
+        }
+         
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../picture/oj.jpg') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .logo h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+        }
+        
+        .motto {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin: 20px 0;
+            color: var(--accent);
+        }
+        
+        nav {
+            background-color: var(--primary);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--secondary);
+        }
+        
+        .breadcrumb {
+            padding: 15px;
+            background-color: #f0e6d2;
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .behavior {
+            background-color: #f9f3e8;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .tips {
+            background: linear-gradient(135deg, #FFB84D, #D2691E);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        
+        button:hover {
+            background-color: var(--secondary);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo h1 { font-size: 2.5rem; }
+            nav ul { flex-direction: column; }
+            nav ul li { margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>PATRONA Puppy Encyclopedia</h1>
+            <p class="motto">"Every Dog Has a Story – Preserving Canine Heritage Worldwide"</p>
+            <p>Created by Famous Veteran Ms. Patrona</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#breeds">Dog Breeds</a></li>
+            <li><a href="#countries">By Country</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#nutrition">Nutrition Tips</a></li>
+            <li><a href="#query">Ask a Question</a></li>
+            <li><a href="#about">About Patrona</a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb Example (when on subpage) -->
+    <div class="breadcrumb">
+        <a href="#home">Home</a> » <a href="#breeds">Dog Breeds</a> » German Shepherd
+    </div>
+
+    <div class="container">
+
+        <!-- Dog Breeds Section -->
+        <section id="breeds" class="section">
+            <h2>Explore Dog Breeds</h2>
+            <div class="grid">
+                <!-- German Shepherd -->
+                <div class="card">
+                    <img src="../picture/valima.jpg" alt="German Shepherd">
+                    <div class="card-content">
+                        <h3 style="color:#8B4513;text-transform:capitalize;margin-bottom: 10px;">German Shepherd</h3>
+                        <p><strong>Origin:</strong> Germany</p>
+                        <p><strong>Type:</strong> Herding / Working</p>
+                        <div class="behavior">
+                            <strong>Behavior:</strong> Highly intelligent, loyal, courageous, excellent guard dog, very trainable, strong protective instincts.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Labrador Retriever -->
+                <div class="card">
+                    <img src="../picture/bridal2.jpg" alt="Labrador">
+                    <div class="card-content">
+                        <h3>Labrador Retriever</h3>
+                        <p><strong>Origin:</strong> Canada (Newfoundland)</p>
+                        <p><strong>Type:</strong> Sporting</p>
+                        <div class="behavior">
+                            <strong>Behavior:</strong> Friendly, outgoing, gentle, excellent with children, highly food-motivated, loves water.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shiba Inu -->
+                <div class="card">
+                    <img src="../picture/bridal3.jfif" alt="Shiba Inu">
+                    <div class="card-content">
+                        <h3>Shiba Inu</h3>
+                        <p><strong>Origin:</strong> Japan</p>
+                        <p><strong>Type:</strong> Companion / Hunting</p>
+                        <div class="behavior">
+                            <strong>Behavior:</strong> Independent, cat-like, alert, agile, clean, loyal but reserved with strangers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <h2>Patrona's Personal Photography Collection</h2>
+            <div class="gallery">
+                <img src="../picture/bridal6.jpg" alt="Puppy playing">
+                <img src="../picture/bridal4.jfif" alt="Husky in snow">
+                <img src="../picture/bridal.jpg" alt="Golden Retriever">
+                <img src="../picture/suit2.jpg" alt="Beagle puppy">
+                <img src="../picture/suit4.jpg" alt="Border Collie">
+                <img src="../picture/suit6.jpg" alt="Pug">
+                  <img src="../picture/bridal4.jfif" alt="Pug">
+                    <img src="../picture/bridal5.jfif" alt="Pug">
+            </div>
+        </section>
+
+        <!-- Nutrition Tips -->
+        <section id="nutrition" class="section">
+            <h2>Food & Nutrition Tips by Veteran Patrona</h2>
+            <div class="tips">
+                <h3>Golden Rules for Feeding Your Dog</h3>
+                <ul>
+                    <li>Always provide fresh water daily</li>
+                    <li>Choose high-quality protein as first ingredient</li>
+                    <li>Avoid toxic foods: chocolate, grapes, onions, garlic</li>
+                    <li>Puppies need 3-4 meals a day, adults 2</li>
+                    <li>Adjust portions according to activity level</li>
+                    <li>Never feed cooked bones</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Query Form -->
+        <section id="query" class="section">
+            <h2>Ask Veteran Patrona Anything About Dogs</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject (e.g., German Shepherd Training)">
+                <textarea rows="6" placeholder="Your Question... (Behavior, Health, Training, Nutrition, etc.)" required></textarea>
+                <button type="submit">Send Question to Patrona</button>
+            </form>
+        </section>
+
+        <!-- About Patrona -->
+        <section id="about" class="section">
+            <h2>About Veteran Patrona</h2>
+            <p style="text-align:center; font-size:1.2rem;">
+                A decorated veteran who served her nation with honor, Ms. Patrona found healing and purpose through animals. 
+                Over three decades, she has documented hundreds of dog breeds across the world, studied their behavior in real environments, 
+                and captured their souls through her lens. This website is her gift to dog lovers everywhere.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Patrona Puppy Encyclopedia | Created with Love for Canines Worldwide</p>
+        <p>A Tribute by Famous Veteran Patrona</p>
+    </footer>
+
+</body>
+
+</html>

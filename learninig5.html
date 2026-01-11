@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height:100vh;
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:80vh;
+        gap:15px;
+        border-top: 5px solid purple;
+        max-width:800px;
+        width:100%;
+    }
+    .email input,
+    .password input,
+    .re-type input,
+    .firstname input,
+    .lastname input{
+        width:80%;
+        border:1px solid grey;
+        font-size:18px;
+        padding:10px;
+    
+
+
+    }
+    .firstlastname{
+        display: flex;
+        gap:10px;
+        width:fit-content;
+    }
+    fieldset{
+        width:70%;
+    }
+    .rigister-btn{
+        width:60%;
+        padding:20px;
+        text-transform: capitalize;
+        background-color:purple;
+        color:white;
+        font-size:16px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 style="text-transform: capitalize;">responsive rgistration form</h1>
+        <div class="email">
+       <i class="fa-solid fa-envelope"></i>
+        <input type="emai" placeholder="Email" required>
+    </div>
+    <div class="password">
+            <i class="fa fa-lock"></i>
+        <input type="password" placeholder="password" required>
+        </div>
+        <div class="re-type">
+            <i class="fa fa-lock"></i>
+        <input type="re-type pass" placeholder="Re-type password" required>
+        </div>
+          <div class="firstlastname">
+                <i class="fa fa-user"></i>
+        <input type="first-name" placeholder="First Name">
+            <i class="fa fa-user"></i>
+        <input type="Last-name" placeholder="Last Name">
+        </div>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+        </fieldset>
+        <select style="padding:15px;font-size:16px;">
+            <option>---------------------select current country--------------------------</option>
+            <option >USA</option>
+            <option >Canada</option>
+            <option >UK</option>
+            <option>China</option>
+ </select>
+   
+ <label><input type="checkbox" style="font-size:15px;font-weight: bold;">I want to agree with term and condition </label>
+ 
+<label> <input type="checkbox" style="font-size:15px;font-weight: bold;">I want to recieve a newsletter</label>
+        
+<button type="submit" class="rigister-btn">registration</button>
+
+    
+</body>
+</html>

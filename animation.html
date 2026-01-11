@@ -1,0 +1,73 @@
+     <!-- eight section  -->
+      <section>
+    <div class="slider2">
+      <div class="slider-track">
+         <!-- 6 images -->
+    
+          <img src="../picture/sathrogen zanlew.jpeg" alt="1">
+    
+        <img src="../picture/calmcombos.jpg" alt="2">
+
+    
+        <img src="../picture/progolf.jpeg" alt="3">
+        
+
+        <img src="../picture/greeg.jpeg" alt="4">
+      
+
+        <img src="../picture/listpop.jpg" alt="5">
+    
+
+        <img src="../picture/blatro.jpeg" alt="6"> 
+
+        
+    
+ 
+
+
+        <!-- repeat same 6 images for smooth looping  -->
+        <img src="../picture/sathrogen zanlew.jpeg" alt="1">
+        <img src="../picture/calmcombos.jpg" alt="2">
+        <img src="../picture/progolf.jpeg" alt="3">
+        <img src="../picture/greeg.jpeg" alt="4">
+        <img src="../picture/listpop.jpg" alt="5">
+        <img src="../picture/blatro.jpeg" alt="6">
+      </div>
+    </div>
+  </section>/* eight section */
+
+     .slider2 {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: #fff;
+  border: 1px solid white;
+}
+
+.slider-track {
+  display: flex;
+  align-items: center;
+  animation: scroll 15s linear infinite;
+}
+
+    .slider2 img {
+      width:400px;   /* image size */
+      height:250px;  /* fixed height */
+      margin: 10px;
+      display: inline;
+      object-fit: cover;
+      opacity:1.5;
+
+    }
+
+
+    /* Animation */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+
+
+

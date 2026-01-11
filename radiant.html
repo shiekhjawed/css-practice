@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Boxes</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background: #edf0ec;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box {
+            height: 150px;
+            width: 250px;
+            border-radius: 12px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgb(235, 234, 234);
+        }
+
+        .linear {
+            background: linear-gradient(45deg, red, yellow, green, blue);
+        }
+
+        .radial {
+            background: radial-gradient(circle, red, yellow, green, blue);
+        }
+
+        .conic {
+            background: conic-gradient(red, yellow, green, blue);
+        }
+
+        .repeat {
+            background: repeating-linear-gradient(45deg, red, yellow 20px, green 40px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box linear">linear gradient</div>
+    <div class="box radial">radial gradient</div>
+    <div class="box conic">conic gradient</div>
+    <div class="box repeat">repeating linear gradient</div>
+</body>
+</html>

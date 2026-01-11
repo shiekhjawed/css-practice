@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY own first successful html css  website netflix</title>
+    <meta property="og:title" content="My Awesome Website">
+<meta property="og:description" content="Explore my latest projects and tutorials.">
+<meta property="og:image" content="https://yourwebsite.com/images/preview.jpg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+       font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+      background:linear-gradient(to right,black,black,black );
+    
+    }
+        
+      header {
+      background-image: url("../ntflix.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height:500px; width:100%;
+      position:relative;
+      box-shadow:linear-gradient(to right,black,black,black );
+    
+    }
+    /* header::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.4); /* dark overlay like real Netflix */
+        /* z-index: 1;
+    } */ */
+     nav{
+            display: flex;
+            justify-content:space-between;
+            padding:20px;
+            color:white;
+            position:absolute;
+            top:0; left:0;
+            width:100%;
+            z-index:2;
+        }
+    .logo{
+        
+     color:#8b0d0d;
+     font-size:50px;
+     font-weight:bold;
+     text-transform:uppercase;
+ 
+
+     }
+    #sign  {
+       padding: 20px;
+        font-size:20px;
+        background-color:red;
+        color:white;
+        border:none;
+        border-radius:10px;
+        font-weight:bold;
+        margin-left:1000px;
+        
+    }
+   
+    .logo-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    .logo-text h1{
+        font-size:60px;
+        font-weight:bold;
+        text-transform:capitalize;
+        margin-bottom:20px;
+    }
+    .logo-text h3{
+        font-size:20px;
+        text-transform: capitalize;
+        margin-bottom:20px;
+    }
+    .logo-text p{
+        font-size:15px;
+        margin-bottom:20px;
+    }
+    .logo-text input{
+        padding:15px;
+        width:400px;
+        font-size:18px;
+        border:none;
+        background: none;
+        text-transform: capitalize;
+    
+
+         }
+    .logo-text input::placeholder{
+        color:white;
+        border-top:2px solid white;
+        border-bottom:2px solid white;
+        padding:10px;
+        
+     }
+    .logo-text button{
+        padding:15px;
+        font-size:20px;
+        background-color:red;
+        color:white;
+        border:none;
+        border-radius:5px;
+        font-weight:bolder;
+        margin-left:10px;
+    }
+    h2{
+        font-size:30px;
+        margin:20px;
+        text-transform: capitalize;
+         color:white;
+         /* line */
+ }
+   .line {
+
+  width: 100%;
+  height: 100px;
+  border-top:5px solid red; /* line color */
+  border-radius:50px;     /* curve */
+  transform: rotate(0deg);      /* adjust tilt if needed */
+}
+
+    
+
+    /* Trending section */
+    .trending{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    }
+    .trending h1 {
+    color:black;
+    font-size: 200px;
+    font-weight: bold;
+    margin-top: 150px;
+    text-shadow:
+        -2px -2px 0 white,  
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white; /* Creates a black outline */
+    }
+ 
+    
+  .digit1{
+    background-image:url("../picture/2wed.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    width:200px;height:300px;
+    border-radius: 10px;
+  }
+.digit2{
+    background-image:url("../picture/fallforme.jpg");
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    width:200px;
+    height:300px;
+    border-radius: 10px;
+
+}
+
+
+ .digit3{
+    background-image:url("../picture/raid2.jpeg");
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    width:200px;
+    height:300px;
+    border-radius: 10px;
+}
+.digit4{
+    background-image:url("../picture/squadgame.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    width:200px;
+    height:300px;
+    border-radius: 10px;
+}
+.digit5{
+    background-image:url("../picture/the-fall-guy.jpeg");
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    width:200px;
+    height:300px;
+    border-radius: 10px;
+}
+ .h1{
+        
+        border:2px solid black;
+    } 
+
+/* CARD SECTION */
+.text-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    }
+.card{
+    background:linear-gradient(to right, purple,rgb(45, 7, 98));
+    border-radius: 10px;
+    padding:20px;
+    width: 200px;
+    height: 300px;
+}
+.card p{
+    font-size:15px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom:20px;
+}
+.card-icon {
+    font-size: 50px;
+
+    margin-left:100px;
+    text-align: left;
+}
+/* Query section */
+
+  .text-query {
+   
+    width:80%;
+    padding:12px;
+    color:white;
+    font-size:30px;
+    display:flex;
+    flex-direction: column;
+    margin-left:100px;
+    text-transform: capitalize;
+    
+
+}
+.query{
+
+   background-color:hwb(0 50% 50%);
+   padding:20px;
+   margin-top:20px;
+}
+/* Membership Section */
+.membership{
+    display: flex;
+    justify-content: center;
+
+}
+     .membership input{
+        padding:15px;
+        width:400px;
+        font-size:18px;
+        border:none;
+        background: none;
+        text-transform: capitalize;
+         }
+   .membership input::placeholder{
+        color:white;
+        border-top:2px solid white;
+        border-bottom:2px solid white;
+        padding:10px;
+        
+     }
+   .membership button{
+        padding:15px;
+        font-size:20px;
+        background-color:red;
+        color:white;
+        border:none;
+        border-radius:5px;
+        font-weight:bolder;
+        margin-left:10px;
+    }
+
+/* link section */
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.link div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.link a {
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+    transition: color 0.2s;
+    text-transform: capitalize;
+}
+button{
+    background-color: black;
+    padding:20px;
+    font-size:18px;
+    color:white;
+    border-color:white;
+    border-right:none;
+    margin-left:100px;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+
+        <div class="logo">
+           NetFlix
+      
+           <button id="sign">Sign-in</button>
+    </div>
+</nav>
+    
+    
+    <div class="logo-text">
+        <h1>unlimited movies,tv <br>shows, and more</h1>
+        <h3>starts at rs 250.cancel anytime</h3>
+        <p>Ready to watch? Enter your email to create or restart your membership</p>
+        <input type="text" placeholder="Email address">
+        <button >Get Started ></button>
+
+    </div>
+</header>
+<br><br>
+<!-- line -->
+ 
+ <div class="line"></div> 
+
+
+<!-- Trending Section --> 
+ <h2>trending now</h2>
+    <section class="trending">
+        <div class="digit1">
+            <h1>1</h1></div>
+         <div class="digit2">
+            <h1 >2</h1></div>
+          <div class="digit3">
+            <h1>3</h1></div>
+           <div class="digit4">
+            <h1>4</h1></div>
+            <div class="digit5">
+                <h1>5</h1></div> 
+  </section>
+          <!-- Card section -->
+        <h2 style="margin-left:200px;">more reason to join</h2>
+<section class="text-card">
+<div class="card">
+    <h2 style="text-align: center;;">enjoy on your tv</h2>
+    <p>watch on smart Tv playstation, Xbox chromical apple tv,blue ray play group and more</p>
+    <i class="fa-solid fa-tv card-icon" style="color: deeppink;"></i>
+</div>
+<div class="card">
+    
+    <h2 style="color: white;text-align: center;">download your shows to watch offline</h2>
+    <p style="margin-bottom:1px;">save your favourite easily and always have something to watch</p>
+    <i class="fa-solid fa-download card-icon" style="color: deeppink;margin-left:100px;"></i>
+</div>
+<div class="card">
+      
+    <h2 style="color: white;text-align: center;">watch everywhere</h2>
+    <p style="color:white;">Watch unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+      <i class="fa-solid fa-mobile card-icon" style="color:deeppink;margin: bottom 1px;;"></i>
+</div>
+<div class="card">
+    
+    <h2 style="color: white;text-align: center;">create profile for kids</h2>
+    <p>gen kids on adventure with their favouite character in a space made just for them free with your membership.</p>
+    <i class="fa-solid fa-children card-icon" style="color:deeppink;margin-left:100px;"></i>
+          
+</div>
+<!-- Query Section -->
+</section>
+<h2 style="margin-left:100px;">Frequently Asked Questions</h2>
+<div class="text-query">
+    <div class="query">
+<summary style="font-weight:bold;">what is NetFlix? <i class="fa-solid fa-plus" style="margin-left:98%;font-size:30px;"></i></summary>
+    </div>
+     
+    <div class="query">
+
+      <summary style="font-weight:bold;">how much does Netflix cost?<i class="fa-solid fa-plus" style="margin-left:98%;font-size:30px;"></i></summary></div>
+    <div class="query">
+        <summary style="font-weight:bold;">where can I watch? <i class="fa-solid fa-plus" style="margin-left:98%;font-size:30px;"></i></summary></div>
+
+ 
+  <div class="query">
+
+      <summary style="font-weight:bold;">how do i cancel?<i class="fa-solid fa-plus" style="margin-left:98%;font-size:30px;"></i></summary></div>
+    <div class="query">
+        <summary style="font-weight:bold;">what can i watch on netflix?<i class="fa-solid fa-plus" style="margin-left:98%;
+        font-size:30px;"></i></summary></div>
+<div class="query">
+      <summary style="font-weight:bold;">Is netflix good for kids?<i class="fa-solid fa-plus" style="margin-left:98%;font-size:30px;"></i></summary></div>
+    </div>
+    <!-- Membership section -->
+    <p style="color:white; margin-left:30%;">Ready to watch?Enter you email to create or restart  your membership</p>
+    <br><br>
+      <div class="membership">
+    <input type="text" placeholder="Email address">
+        <button >Get Started ></button></div>
+<!-- link section -->
+<h2><a href="" style="color:white;margin-left:200px;">Question? Contact Us</a></h2>
+<section >
+    <div class="link">
+        <div>
+        <a href="" style="color:white ;">FAQ</a>
+        <a href="" style="color:white ;">investor relations</a>
+        <a href="" style="color:white ;">privacy</a>
+        <a href="" style="color:white ;text-decoration: none;">speed test</a></div>
+        <div>
+        <a href="" style="color:white ;">help center</a>
+        <a href="" style="color:white ;">jobs</a>
+        <a href="" style="color:white ;">Cookie Preferences</a>
+        <a href="" style="color:white ; text-decoration: none;">legal notices</a></div>
+        <div>
+        <a href="" style="color:white  ;">Account</a>
+        <a href="" style="color:white ;">ways to watch</a>
+        <a href="" style="color:white ;">corporate information</a>
+        <a href="" style="color:white ; text-decoration: none;">only on netflix</a></div>
+        
+            <div>
+        <a href="" style="color:white ;">media center</a>
+        <a href="" style="color:white ;">terms of use</a>   
+        <a href="" style="color:white ;">contact us</a></div>
+       </div>
+
+    </div>
+</section>
+<button>
+     <i class="fa fa-globe"></i>English </button>
+    <br><br><br><br>
+    <h3 style="color:white; margin-left:100px;">NetFlix Pakistan</h3><br><br><br>
+    <p style="color:white;margin-left:100px;">This page is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+     <a href="" style="color:skyblue;">Learn More</a></p>
+     <br> <br><br><br>
+    </body>
+</html>
