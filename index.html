@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about the different types of areas in Pakistan — rural, urban, and desert regions. Discover their lifestyles, environments, and unique characteristics." />
+  <meta name="keywords" content="Pakistan, rural areas, urban areas, desert areas, geography, regions, countryside, cities" />
+  <meta name="author" content="Shiekh Amber Jawed" />
+
+  <title>Pakistan Areas Portal | Rural, Urban & Desert Regions</title>
+
+  <style>
+    /* Your existing CSS remains unchanged */
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Times New Roman", serif;
+      direction: ltr;
+      background-color: #f8f9fa;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    header h1 {
+      font-size: clamp(24px, 5vw, 30px);
+      text-transform: capitalize;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: clamp(14px, 3vw, 16px);
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    section, article {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    aside {
+      background-color: #e9ecef;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 200px;
+      background: linear-gradient(45deg, rgb(219, 210, 219), rgb(189, 200, 216), rgb(175, 45, 175), pink);
+      margin-top: 20px;
+    }
+
+    aside h3 {
+      font-size: clamp(18px, 4vw, 20px);
+      margin-bottom: 10px;
+    }
+
+    aside li {
+      line-height: 2rem;
+      color: #007bff;
+    }
+
+    aside li a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .three {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .threeimg {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: clamp(14px, 3vw, 16px);
+      margin-top: auto;
+    }
+
+    article h1 {
+      font-family: 'Georgia', serif;
+      font-size: clamp(24px, 5vw, 34px);
+      color: #1e3a8a;
+      letter-spacing: 1px;
+      margin: 0 0 10px;
+      text-transform: capitalize;
+      text-shadow: 0 3px 8px rgba(30, 58, 138, 0.12);
+      text-align: center;
+    }
+
+    article p {
+      font-family: Arial, sans-serif;
+      font-size: clamp(14px, 3vw, 16px);
+      color: #444;
+      max-width: 720px;
+      margin: 0 auto 16px;
+      padding: 12px 16px;
+      font-style: italic;
+      border-radius: 12px;
+      line-height: 1.5;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      object-fit: cover;
+      height: auto;
+      transition: transform 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      max-width: 420px;
+      margin: 20px auto;
+      font-style: italic;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    figcaption ul {
+      margin: 8px 0 10px 20px;
+      color: #222;
+      font-style: normal;
+      line-height: 1.6;
+    }
+
+    figcaption a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+      section, article {
+        margin-right: 0;
+        width: 100%;
+        max-width: 600px;
+      }
+      aside {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+        height: auto;
+      }
+      .three {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: clamp(20px, 4vw, 24px);
+      }
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: clamp(12px, 2.5vw, 14px);
+      }
+      article p, figcaption {
+        width: 100%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      figure img {
+        max-width: 100%;
+      }
+      footer {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 10px;
+      }
+      main {
+        padding: 10px;
+        gap: 10px;
+      }
+      article h1 {
+        font-size: clamp(20px, 4vw, 24px);
+      }
+      article p, figcaption {
+        font-size: clamp(12px, 2.5vw, 14px);
+        padding: 10px;
+      }
+      aside {
+        padding: 15px;
+      }
+      .three {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to the Pakistan Areas Portal</h1>
+    <nav aria-label="Main navigation">
+      <a href="#" title="Go to home page">Home</a> |
+      <a href="#" title="Learn about this site">About</a> |
+      <a href="#" title="Contact information">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="rural-areas">
+      <article>
+        <h1>Rural Areas of Pakistan</h1>
+        <p>Rural areas are villages and countryside regions where most people depend on agriculture or livestock for their livelihood. They offer open space, cleaner air, and close-knit communities.</p>
+        <figure>
+          <img src="../picture/rularareas.jpeg" alt="Green rural landscape in Pakistan" loading="lazy" />
+          <figcaption>
+            <strong>Rural areas</strong> are regions where most people depend on agriculture or livestock for livelihood.
+            <div>
+              <strong style="display:block;margin-bottom:6px;color:#007bff;">Key features:</strong>
+              <ul>
+                <li>Low population density and wide open spaces</li>
+                <li>Strong community ties and traditional lifestyles</li>
+                <li>Farming-based economy and local markets</li>
+                <li>Cleaner air and a slower pace of life</li>
+              </ul>
+              <a href="#" title="Explore more about rural life in Pakistan">Explore rural life</a>
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="urban-areas">
+      <article>
+        <h1>Urban Areas of Pakistan</h1>
+        <p>Urban areas are cities and towns with dense populations, advanced infrastructure, and diverse economic activities. These regions offer better access to education, healthcare, and public services.</p>
+        <figure>
+          <img src="../picture/urbanareas2.jpeg" alt="Urban cityscape in Pakistan" loading="lazy" />
+          <figcaption>
+            <p>Urban areas are hubs of industry, commerce, and culture where people experience a fast-paced lifestyle.</p>
+            <ul>
+              <li>Dense housing and modern transport</li>
+              <li>Access to education and healthcare</li>
+              <li>Economic diversity and cultural vibrancy</li>
+            </ul>
+            <p><strong>Major urban centers:</strong> Karachi, Lahore, Islamabad, Faisalabad, Rawalpindi, Peshawar, Quetta</p>
+            <a href="#" title="Explore Pakistan's cities">Explore urban life</a>
+
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Pakistan Area Topics</h3>
+      <ul>
+        <li><a href="#">Introduction</a></li>
+        <li><a href="#rural-areas">Rural Areas</a></li>
+        <li><a href="#urban-areas">Urban Areas</a></li>
+        <li><a href="#desert-areas">Desert Areas</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <section id="desert-areas" class="three">
+    <article>
+      <h2>Desert Areas of Pakistan</h2>
+      <p>Desert areas are dry regions with very little rainfall and extreme temperatures. Despite the harsh climate, these regions have unique ecosystems and communities that thrive through adaptation and resilience.</p>
+      <figure>
+        <img src="../picture/desert.jpeg" alt="Desert landscape of Pakistan" loading="lazy" />
+        <figcaption>
+          <p>Desert regions feature sand dunes, rocky plains, and sparse vegetation, showcasing nature’s resilience.</p>
+          <ul>
+            <li>Adapted plants and animals (e.g., cacti, camels)</li>
+            <li>Modern irrigation techniques for survival</li>
+            <li>Challenges include water scarcity and heat</li>
+          </ul>
+          <a href="#" title="Learn more about Pakistan's deserts">Learn more</a>
+        </figcaption>
+      </figure>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shiekh Amber Jawed. All rights reserved.</p>
+  </footer>
+</body>
+</html>
